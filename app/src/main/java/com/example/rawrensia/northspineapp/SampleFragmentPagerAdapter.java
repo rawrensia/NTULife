@@ -16,7 +16,7 @@ import com.astuetz.PagerSlidingTabStrip;
 
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "Networking", "CCAs/Clubs", "F&B Promotion" };
+    private String tabTitles[] = new String[] { "Networking", "CCAs/Clubs", "Surveys" };
     //private int tabIcons[] = {R.drawable.group, R.drawable.antilope, R.drawable.chopsticks};
 
     public SampleFragmentPagerAdapter(FragmentManager fm) {

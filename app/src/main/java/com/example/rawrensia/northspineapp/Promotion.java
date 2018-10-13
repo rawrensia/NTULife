@@ -41,7 +41,6 @@ public class Promotion extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_promotion, container, false);
-        TextView promo = (TextView) view.findViewById(R.id.promo);
         return view;
     }
 }
