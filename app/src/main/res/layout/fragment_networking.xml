@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This is the fragment  to be displayed for a section associated with a tab -->
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="100dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="7dp"
+    android:horizontalSpacing="7dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    />
+<!-- This is the fragment  to be displayed for a section associated with a tab
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -68,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/rrr" />
-        <!-- <TextView
+        <!- <TextView
         android:id="@+id/tvTitle"
         android:text="List of network events"
         android:layout_width="match_parent"
@@ -77,5 +89,5 @@
         android:textSize="30dp"
         android:fontFamily="@font/nunito"
         android:textColor="@color/colorPrimary"/>-->
-    </LinearLayout>
-</LinearLayout>
+    <!---</LinearLayout>
+</LinearLayout> -->

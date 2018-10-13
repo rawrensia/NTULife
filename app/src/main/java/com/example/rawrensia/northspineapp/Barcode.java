@@ -10,40 +10,33 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by rawrensia on 17/9/18.
+ * Created by rawrensia on 13/10/18.
  */
 
-public class RewardsActivity extends AppCompatActivity{
+public class Barcode extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rewards);
+        setContentView(R.layout.activity_barcode);
 
-        Button redeemBtn;
-
-        redeemBtn = (Button) findViewById(R.id.redeem);
-
-        redeemBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Layer = new Intent(RewardsActivity.this, Barcode.class);
-                startActivity(Layer);
-            }
-        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.action_homepage, menu);
+        inflater.inflate(R.menu.action_voucher, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.ntulife:
-                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+            case R.id.back:
+                Intent intent = new Intent(getApplicationContext(), RewardsActivity.class);
                 startActivity(intent);
                 finish();
                 return true;
@@ -51,5 +44,4 @@ public class RewardsActivity extends AppCompatActivity{
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }
