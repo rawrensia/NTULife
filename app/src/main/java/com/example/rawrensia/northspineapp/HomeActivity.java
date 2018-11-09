@@ -42,10 +42,19 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         ImageView ntu_events = (ImageView) findViewById(R.id.ntuevents);
+        ImageView shuttle_bus = (ImageView) findViewById(R.id.ntushuttle);
         ntu_events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Layer = new Intent(HomeActivity.this, Events.class);
+                startActivity(Layer);
+            }
+        });
+
+        shuttle_bus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Layer = new Intent(HomeActivity.this, ShuttleBus.class);
                 startActivity(Layer);
             }
         });
